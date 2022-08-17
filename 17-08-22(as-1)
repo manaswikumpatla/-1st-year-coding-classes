@@ -1,0 +1,29 @@
+ #include<stdio.h>
+#include<conio.h>
+void main(){
+	 int i,n,sum=0,missing;
+	 printf("enter the size of an array : ");
+	 scanf("%d",&n);
+	 int arr[n-1];
+	 printf("please give value to insert in array: \n");
+	 for(i=0;i<n-1;i++){
+	     scanf("%d",&arr[i]);
+	     sum=sum+arr[i];
+	 }
+	 missing = (n*(n+1))/2 - sum;
+	 printf("missing number is = %d", missing);
+	 getch();
+}
+output:enter the size of an array : 4
+please give value to insert in array: 
+1 2 4 5
+missing number is = 3
+:enter the size of an array : 10
+please give value to insert in array: 
+1 2  3 4 5 6 8 9 10
+missing number is = 7
+
+ 
+
+ 
+
