@@ -12,7 +12,7 @@ int main()
     {
         if( (i % 2) != 0)
        
-            str[i] = toupper(str[i]);
+            str[i] = str[i]-32;
     }
     printf("\n%s", str);
     return 0;
