@@ -1,0 +1,21 @@
+#include <stdio.h>
+void display();
+void main()
+{
+   int n,m;
+   scanf("%d%d",&n,&m);
+   display(n,m);
+}
+void display(int start,int end)
+{
+    if(start>end)
+    return;
+    printf("%d\n",start);
+    display(start+1,end);
+}
+OUTPUT:1 5
+1
+2
+3
+4
+5
